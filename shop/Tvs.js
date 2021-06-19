@@ -2,8 +2,8 @@
 class Tvs extends React.Component {
   render() {
     return <div>
-		  <Product image="img/Sony.jpg"/>
-		  <Product image="img/Samsung.jpg"/>
+		  <Product image="img/sony.jpg"/>
+		  <Product image="img/samsung.jpg"/>
 	</div>
   }
 }
