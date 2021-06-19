@@ -11,7 +11,16 @@
   
 <div id="mydiv"></div>
 
+
+
 <script type="text/babel">
+
+console.log(window.location.host);
+	if(window.location.host.indexOf("localhost") != -1 ){ 
+		localStorage.setItem('contextPath','');
+	} else{
+		localStorage.setItem('contextPath','/app');
+	}
 
 ReactDOM.render(<Gadget />, document.getElementById('mydiv'))
 </script>

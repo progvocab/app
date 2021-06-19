@@ -3,8 +3,8 @@
 class Phones extends React.Component {
   render() {
     return <div>
-		  <Product image="public/iphone.jpg"/>
-		  <Product image="public/oneplus.jpg"/>
+		  <Product image="img/iphone.jpg"/>
+		  <Product image="img/oneplus.jpg"/>
 	</div>
   }
 }
