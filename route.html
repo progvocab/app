@@ -7,12 +7,17 @@
 <script type="text/babel" src="shop/Product.js"> </script>
 <script type="text/babel" src="shop/Phones.js"></script> 
 <script type="text/babel" src="shop/Gadget.js"></script> 
+<script type="text/babel" src="shop/Tvs.js"></script> 
 <body>
   
 <div id="mydiv"></div>
 
 <script type="text/babel">
+	if(localStorage.getItem("productName") == 'phone'){
 ReactDOM.render(<Phones />, document.getElementById('mydiv'))
+}else{
+ReactDOM.render(<Tvs/>, document.getElementById('mydiv'))
+}
 </script>
 
 </body>

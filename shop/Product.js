@@ -12,8 +12,8 @@ class Product extends React.Component {
     render() {
         const { name, price, currency, image, isInCart } = this.props;
  	const imageClick = () => {
-          window.location= window.location.origin + localStorage.getItem('contextPath')
- + '/route.html';
+          	localStorage.setItem("productName" , this.props.name );
+		window.location= window.location.origin + localStorage.getItem('contextPath') + '/route.html';
         } 
 
         return (
