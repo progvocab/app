@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<script type="text/babel" src="clock/Clock2.js"></script> 
+<body>
+  
+<div id="mydiv"></div>
+
+
+
+<script type="text/babel">
+
+console.log(window.location.host);
+	if(window.location.host.indexOf("localhost") != -1 ){ 
+		localStorage.setItem('contextPath','');
+	} else{
+		localStorage.setItem('contextPath','/app');
+	}
+
+ReactDOM.render(<Clock />, document.getElementById('mydiv'))
+</script>
+
+</body>
+</html>
